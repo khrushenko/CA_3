@@ -1,0 +1,54 @@
+div.main {
+    width: 820px;
+    margin: auto;
+}
+
+
+table.tableMain {
+    border-collapse: collapse;
+}
+
+
+th.TableHeaderCell {
+    border: 1px solid black;
+    width: 200px;
+}
+
+
+td.TableSimpleCell {
+    border: 1px solid black;
+    width: 200px;
+}
+
+td.TableAddCell {
+    border: 1px solid white;
+    /*border: none;*/
+    width: 200px;
+    text-align: center;
+}
+
+td.TableButtonCell {
+    border: none;
+}
+
+
+input.inputAdd {
+    width: 195px;
+    /*align-content: center;*/
+    /*width: 200px;*/
+}
+
+
+input {
+    width: 60px;
+}
+
+select {
+    width: 200px;
+}
+
+p.result {
+    color: red;
+    margin-top: 0;
+    /*text-align: center;*/
+}

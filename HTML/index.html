@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Lab3::HomePage</title>
+    <link type="text/css" media="all" rel="stylesheet" href="../styles/style.css"/>
+    <script type="text/javascript" src="../scripts/functions.js"></script>
+    <script type="text/javascript" src="../scripts/jquery-1.11.2.js"></script>
+</head>
+<body onload="load()">
+<div class="main">
+    <!--Table-->
+    <table class="tableMain">
+        <thead>
+        <tr>
+            <th class="TableHeaderCell">Name</th>
+            <th class="TableHeaderCell">About</th>
+            <th class="TableHeaderCell">State</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <!--<br/>-->
+
+    <p class="result"></p><br/>
+
+    <!--Add-->
+    <table class="tableMain">
+        <tr>
+            <td class="TableAddCell">
+                <input type="text" id="nameAdd" class="inputAdd" placeholder="Enter name">
+            </td>
+            <td class="TableAddCell">
+                <input type="text" id="aboutAdd" class="inputAdd" placeholder="Enter info">
+            </td>
+            <td class="TableAddCell">
+                <input type="text" id="stateAdd" class="inputAdd" placeholder="Enter state">
+            </td>
+            <td class="TableButtonCell">
+                <input type="button" id="buttonAdd" value="Add" onClick="createLab()"/>
+            </td>
+        </tr>
+    </table>
+    <br/>
+
+    <!--Edit-->
+    <table class="tableMain">
+        <tr>
+            <td class="TableAddCell">
+                <label>
+                    <select id="nameChange"></select>
+                </label>
+            </td>
+            <td class="TableAddCell">
+                <label>
+                    <select id="fieldChange">
+                        <option value="name">Name</option>
+                        <option value="about">About</option>
+                        <option value="state">State</option>
+                    </select>
+                </label>
+            </td>
+            <td class="TableAddCell">
+                <input type="text" id="inputUpdate" class="inputAdd" placeholder="Enter new value">
+            </td>
+            <td class="TableButtonCell">
+                <input type="button" id="updateButton" value="Change" onClick="updateLab()"/>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
